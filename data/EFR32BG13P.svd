@@ -98447,6 +98447,1990 @@
         </register>
       </registers>
     </peripheral>
+
+    <!-- NVIC interrupt control registers -->
+    <peripheral>
+      <name>NVIC_ISER</name>
+      <description>Nested vectored interrupt
+      controller</description>
+      <groupName>NVIC</groupName>
+      <baseAddress>0xE000E100</baseAddress>
+      <addressBlock>
+        <offset>0x0</offset>
+        <size>0x8</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <registers>
+        <register>
+          <name>ISER0</name>
+          <displayName>ISER0</displayName>
+          <description>Interrupt Set Enable Register 0</description>
+          <addressOffset>0x0</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>EMU</name>
+              <description>EMU Interrupt</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>FRC_PRI</name>
+              <description>FRC_PRI Interrupt</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>WDOG0</name>
+              <description>WDOG0 Interrupt</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>WDOG1</name>
+              <description>WDOG1 Interrupt</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>FRC</name>
+              <description>FRC Interrupt</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MODEM</name>
+              <description>MODEM Interrupt</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>RAC_SEQ</name>
+              <description>RAC_SEQ Interrupt</description>
+              <bitOffset>6</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>RAC_RSM</name>
+              <description>RAC_RSM Interrupt</description>
+              <bitOffset>7</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>BUFC</name>
+              <description>BUFC Interrupt</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>LDMA</name>
+              <description>LDMA Interrupt</description>
+              <bitOffset>9</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>GPIO_EVEN</name>
+              <description>GPIO_EVEN Interrupt</description>
+              <bitOffset>10</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>TIMER0</name>
+              <description>TIMER0 Interrupt</description>
+              <bitOffset>11</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>USART0_RX</name>
+              <description>USART0_RX Interrupt</description>
+              <bitOffset>12</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>USART0_TX</name>
+              <description>USART0_TX Interrupt</description>
+              <bitOffset>13</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ACMP0</name>
+              <description>ACMP0 Interrupt</description>
+              <bitOffset>14</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ADC0</name>
+              <description>ADC0 Interrupt</description>
+              <bitOffset>15</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>IDAC0</name>
+              <description>IDAC0 Interrupt</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>I2C0</name>
+              <description>I2C0 Interrupt</description>
+              <bitOffset>17</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>GPIO_ODD</name>
+              <description>GPIO_ODD Interrupt</description>
+              <bitOffset>18</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>TIMER1</name>
+              <description>TIMER1 Interrupt</description>
+              <bitOffset>19</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>USART1_RX</name>
+              <description>USART1_RX Interrupt</description>
+              <bitOffset>20</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>USART1_TX</name>
+              <description>USART1_TX Interrupt</description>
+              <bitOffset>21</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>LEUART0</name>
+              <description>LEUART0 Interrupt</description>
+              <bitOffset>22</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PCNT0</name>
+              <description>PCNT0 Interrupt</description>
+              <bitOffset>23</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>CMU</name>
+              <description>CMU Interrupt</description>
+              <bitOffset>24</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MSC</name>
+              <description>MSC Interrupt</description>
+              <bitOffset>25</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>CRYPTO0</name>
+              <description>CRYPTO0 Interrupt</description>
+              <bitOffset>26</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>LETIMER0</name>
+              <description>LETIMER0 Interrupt</description>
+              <bitOffset>27</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>AGC</name>
+              <description>AGC Interrupt</description>
+              <bitOffset>28</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PROTIMER</name>
+              <description>PROTIMER Interrupt</description>
+              <bitOffset>29</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PRORTC</name>
+              <description>PRORTC Interrupt</description>
+              <bitOffset>30</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>RTCC</name>
+              <description>RTCC Interrupt</description>
+              <bitOffset>31</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>ISER1</name>
+          <displayName>ISER1</displayName>
+          <description>Interrupt Set Enable Register 1</description>
+          <addressOffset>0x4</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>SYNTH</name>
+              <description>SYNTH Interrupt</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>CRYOTIMER</name>
+              <description>CRYOTIMER Interrupt</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>RFSENSE</name>
+              <description>RFSENSE Interrupt</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>FPUEH</name>
+              <description>FPUEH Interrupt</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>SMU</name>
+              <description>SMU Interrupt</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>WTIMER0</name>
+              <description>WTIMER0 Interrupt</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>USART2_RX</name>
+              <description>USART2_RX Interrupt</description>
+              <bitOffset>6</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>USART2_TX</name>
+              <description>USART2_TX Interrupt</description>
+              <bitOffset>7</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>I2C1</name>
+              <description>I2C1 Interrupt</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>VDAC0</name>
+              <description>VDAC0 Interrupt</description>
+              <bitOffset>9</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>CSEN</name>
+              <description>CSEN Interrupt</description>
+              <bitOffset>10</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>LESENSE</name>
+              <description>LESENSE Interrupt</description>
+              <bitOffset>11</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>CRYPTO1</name>
+              <description>CRYPTO1 Interrupt</description>
+              <bitOffset>12</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>TRNG</name>
+              <description>TRNG Interrupt</description>
+              <bitOffset>13</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+      </registers>
+    </peripheral>
+    <peripheral>
+      <name>NVIC_ICER</name>
+      <description>Nested vectored interrupt
+      controller</description>
+      <groupName>NVIC</groupName>
+      <baseAddress>0xE000E180</baseAddress>
+      <addressBlock>
+        <offset>0x0</offset>
+        <size>0x8</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <registers>
+        <register>
+          <name>ICER0</name>
+          <displayName>ICER0</displayName>
+          <description>Interrupt Clear Enable Register 0</description>
+          <addressOffset>0x0</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>EMU</name>
+              <description>EMU Interrupt</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>FRC_PRI</name>
+              <description>FRC_PRI Interrupt</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>WDOG0</name>
+              <description>WDOG0 Interrupt</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>WDOG1</name>
+              <description>WDOG1 Interrupt</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>FRC</name>
+              <description>FRC Interrupt</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MODEM</name>
+              <description>MODEM Interrupt</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>RAC_SEQ</name>
+              <description>RAC_SEQ Interrupt</description>
+              <bitOffset>6</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>RAC_RSM</name>
+              <description>RAC_RSM Interrupt</description>
+              <bitOffset>7</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>BUFC</name>
+              <description>BUFC Interrupt</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>LDMA</name>
+              <description>LDMA Interrupt</description>
+              <bitOffset>9</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>GPIO_EVEN</name>
+              <description>GPIO_EVEN Interrupt</description>
+              <bitOffset>10</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>TIMER0</name>
+              <description>TIMER0 Interrupt</description>
+              <bitOffset>11</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>USART0_RX</name>
+              <description>USART0_RX Interrupt</description>
+              <bitOffset>12</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>USART0_TX</name>
+              <description>USART0_TX Interrupt</description>
+              <bitOffset>13</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ACMP0</name>
+              <description>ACMP0 Interrupt</description>
+              <bitOffset>14</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ADC0</name>
+              <description>ADC0 Interrupt</description>
+              <bitOffset>15</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>IDAC0</name>
+              <description>IDAC0 Interrupt</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>I2C0</name>
+              <description>I2C0 Interrupt</description>
+              <bitOffset>17</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>GPIO_ODD</name>
+              <description>GPIO_ODD Interrupt</description>
+              <bitOffset>18</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>TIMER1</name>
+              <description>TIMER1 Interrupt</description>
+              <bitOffset>19</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>USART1_RX</name>
+              <description>USART1_RX Interrupt</description>
+              <bitOffset>20</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>USART1_TX</name>
+              <description>USART1_TX Interrupt</description>
+              <bitOffset>21</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>LEUART0</name>
+              <description>LEUART0 Interrupt</description>
+              <bitOffset>22</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PCNT0</name>
+              <description>PCNT0 Interrupt</description>
+              <bitOffset>23</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>CMU</name>
+              <description>CMU Interrupt</description>
+              <bitOffset>24</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MSC</name>
+              <description>MSC Interrupt</description>
+              <bitOffset>25</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>CRYPTO0</name>
+              <description>CRYPTO0 Interrupt</description>
+              <bitOffset>26</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>LETIMER0</name>
+              <description>LETIMER0 Interrupt</description>
+              <bitOffset>27</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>AGC</name>
+              <description>AGC Interrupt</description>
+              <bitOffset>28</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PROTIMER</name>
+              <description>PROTIMER Interrupt</description>
+              <bitOffset>29</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PRORTC</name>
+              <description>PRORTC Interrupt</description>
+              <bitOffset>30</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>RTCC</name>
+              <description>RTCC Interrupt</description>
+              <bitOffset>31</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>ICER1</name>
+          <displayName>ICER1</displayName>
+          <description>Interrupt Clear Enable Register 1</description>
+          <addressOffset>0x4</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>SYNTH</name>
+              <description>SYNTH Interrupt</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>CRYOTIMER</name>
+              <description>CRYOTIMER Interrupt</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>RFSENSE</name>
+              <description>RFSENSE Interrupt</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>FPUEH</name>
+              <description>FPUEH Interrupt</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>SMU</name>
+              <description>SMU Interrupt</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>WTIMER0</name>
+              <description>WTIMER0 Interrupt</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>USART2_RX</name>
+              <description>USART2_RX Interrupt</description>
+              <bitOffset>6</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>USART2_TX</name>
+              <description>USART2_TX Interrupt</description>
+              <bitOffset>7</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>I2C1</name>
+              <description>I2C1 Interrupt</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>VDAC0</name>
+              <description>VDAC0 Interrupt</description>
+              <bitOffset>9</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>CSEN</name>
+              <description>CSEN Interrupt</description>
+              <bitOffset>10</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>LESENSE</name>
+              <description>LESENSE Interrupt</description>
+              <bitOffset>11</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>CRYPTO1</name>
+              <description>CRYPTO1 Interrupt</description>
+              <bitOffset>12</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>TRNG</name>
+              <description>TRNG Interrupt</description>
+              <bitOffset>13</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+      </registers>
+    </peripheral>
+    <peripheral>
+      <name>NVIC_ISPR</name>
+      <description>Nested vectored interrupt
+      controller</description>
+      <groupName>NVIC</groupName>
+      <baseAddress>0xE000E200</baseAddress>
+      <addressBlock>
+        <offset>0x0</offset>
+        <size>0x8</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <registers>
+        <register>
+          <name>ISPR0</name>
+          <displayName>ISPR0</displayName>
+          <description>Interrupt Set Pending Register 0</description>
+          <addressOffset>0x0</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>EMU</name>
+              <description>EMU Interrupt</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>FRC_PRI</name>
+              <description>FRC_PRI Interrupt</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>WDOG0</name>
+              <description>WDOG0 Interrupt</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>WDOG1</name>
+              <description>WDOG1 Interrupt</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>FRC</name>
+              <description>FRC Interrupt</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MODEM</name>
+              <description>MODEM Interrupt</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>RAC_SEQ</name>
+              <description>RAC_SEQ Interrupt</description>
+              <bitOffset>6</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>RAC_RSM</name>
+              <description>RAC_RSM Interrupt</description>
+              <bitOffset>7</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>BUFC</name>
+              <description>BUFC Interrupt</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>LDMA</name>
+              <description>LDMA Interrupt</description>
+              <bitOffset>9</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>GPIO_EVEN</name>
+              <description>GPIO_EVEN Interrupt</description>
+              <bitOffset>10</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>TIMER0</name>
+              <description>TIMER0 Interrupt</description>
+              <bitOffset>11</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>USART0_RX</name>
+              <description>USART0_RX Interrupt</description>
+              <bitOffset>12</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>USART0_TX</name>
+              <description>USART0_TX Interrupt</description>
+              <bitOffset>13</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ACMP0</name>
+              <description>ACMP0 Interrupt</description>
+              <bitOffset>14</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ADC0</name>
+              <description>ADC0 Interrupt</description>
+              <bitOffset>15</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>IDAC0</name>
+              <description>IDAC0 Interrupt</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>I2C0</name>
+              <description>I2C0 Interrupt</description>
+              <bitOffset>17</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>GPIO_ODD</name>
+              <description>GPIO_ODD Interrupt</description>
+              <bitOffset>18</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>TIMER1</name>
+              <description>TIMER1 Interrupt</description>
+              <bitOffset>19</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>USART1_RX</name>
+              <description>USART1_RX Interrupt</description>
+              <bitOffset>20</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>USART1_TX</name>
+              <description>USART1_TX Interrupt</description>
+              <bitOffset>21</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>LEUART0</name>
+              <description>LEUART0 Interrupt</description>
+              <bitOffset>22</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PCNT0</name>
+              <description>PCNT0 Interrupt</description>
+              <bitOffset>23</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>CMU</name>
+              <description>CMU Interrupt</description>
+              <bitOffset>24</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MSC</name>
+              <description>MSC Interrupt</description>
+              <bitOffset>25</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>CRYPTO0</name>
+              <description>CRYPTO0 Interrupt</description>
+              <bitOffset>26</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>LETIMER0</name>
+              <description>LETIMER0 Interrupt</description>
+              <bitOffset>27</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>AGC</name>
+              <description>AGC Interrupt</description>
+              <bitOffset>28</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PROTIMER</name>
+              <description>PROTIMER Interrupt</description>
+              <bitOffset>29</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PRORTC</name>
+              <description>PRORTC Interrupt</description>
+              <bitOffset>30</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>RTCC</name>
+              <description>RTCC Interrupt</description>
+              <bitOffset>31</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>ISPR1</name>
+          <displayName>ISPR1</displayName>
+          <description>Interrupt Set Pending Register 1</description>
+          <addressOffset>0x4</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>SYNTH</name>
+              <description>SYNTH Interrupt</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>CRYOTIMER</name>
+              <description>CRYOTIMER Interrupt</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>RFSENSE</name>
+              <description>RFSENSE Interrupt</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>FPUEH</name>
+              <description>FPUEH Interrupt</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>SMU</name>
+              <description>SMU Interrupt</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>WTIMER0</name>
+              <description>WTIMER0 Interrupt</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>USART2_RX</name>
+              <description>USART2_RX Interrupt</description>
+              <bitOffset>6</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>USART2_TX</name>
+              <description>USART2_TX Interrupt</description>
+              <bitOffset>7</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>I2C1</name>
+              <description>I2C1 Interrupt</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>VDAC0</name>
+              <description>VDAC0 Interrupt</description>
+              <bitOffset>9</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>CSEN</name>
+              <description>CSEN Interrupt</description>
+              <bitOffset>10</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>LESENSE</name>
+              <description>LESENSE Interrupt</description>
+              <bitOffset>11</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>CRYPTO1</name>
+              <description>CRYPTO1 Interrupt</description>
+              <bitOffset>12</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>TRNG</name>
+              <description>TRNG Interrupt</description>
+              <bitOffset>13</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+      </registers>
+    </peripheral>
+    <peripheral>
+      <name>NVIC_ICPR</name>
+      <description>Nested vectored interrupt
+      controller</description>
+      <groupName>NVIC</groupName>
+      <baseAddress>0xE000E280</baseAddress>
+      <addressBlock>
+        <offset>0x0</offset>
+        <size>0x8</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <registers>
+        <register>
+          <name>ICPR0</name>
+          <displayName>ICPR0</displayName>
+          <description>Interrupt Clear Pending Register 0</description>
+          <addressOffset>0x0</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>EMU</name>
+              <description>EMU Interrupt</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>FRC_PRI</name>
+              <description>FRC_PRI Interrupt</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>WDOG0</name>
+              <description>WDOG0 Interrupt</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>WDOG1</name>
+              <description>WDOG1 Interrupt</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>FRC</name>
+              <description>FRC Interrupt</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MODEM</name>
+              <description>MODEM Interrupt</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>RAC_SEQ</name>
+              <description>RAC_SEQ Interrupt</description>
+              <bitOffset>6</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>RAC_RSM</name>
+              <description>RAC_RSM Interrupt</description>
+              <bitOffset>7</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>BUFC</name>
+              <description>BUFC Interrupt</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>LDMA</name>
+              <description>LDMA Interrupt</description>
+              <bitOffset>9</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>GPIO_EVEN</name>
+              <description>GPIO_EVEN Interrupt</description>
+              <bitOffset>10</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>TIMER0</name>
+              <description>TIMER0 Interrupt</description>
+              <bitOffset>11</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>USART0_RX</name>
+              <description>USART0_RX Interrupt</description>
+              <bitOffset>12</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>USART0_TX</name>
+              <description>USART0_TX Interrupt</description>
+              <bitOffset>13</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ACMP0</name>
+              <description>ACMP0 Interrupt</description>
+              <bitOffset>14</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ADC0</name>
+              <description>ADC0 Interrupt</description>
+              <bitOffset>15</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>IDAC0</name>
+              <description>IDAC0 Interrupt</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>I2C0</name>
+              <description>I2C0 Interrupt</description>
+              <bitOffset>17</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>GPIO_ODD</name>
+              <description>GPIO_ODD Interrupt</description>
+              <bitOffset>18</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>TIMER1</name>
+              <description>TIMER1 Interrupt</description>
+              <bitOffset>19</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>USART1_RX</name>
+              <description>USART1_RX Interrupt</description>
+              <bitOffset>20</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>USART1_TX</name>
+              <description>USART1_TX Interrupt</description>
+              <bitOffset>21</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>LEUART0</name>
+              <description>LEUART0 Interrupt</description>
+              <bitOffset>22</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PCNT0</name>
+              <description>PCNT0 Interrupt</description>
+              <bitOffset>23</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>CMU</name>
+              <description>CMU Interrupt</description>
+              <bitOffset>24</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MSC</name>
+              <description>MSC Interrupt</description>
+              <bitOffset>25</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>CRYPTO0</name>
+              <description>CRYPTO0 Interrupt</description>
+              <bitOffset>26</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>LETIMER0</name>
+              <description>LETIMER0 Interrupt</description>
+              <bitOffset>27</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>AGC</name>
+              <description>AGC Interrupt</description>
+              <bitOffset>28</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PROTIMER</name>
+              <description>PROTIMER Interrupt</description>
+              <bitOffset>29</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PRORTC</name>
+              <description>PRORTC Interrupt</description>
+              <bitOffset>30</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>RTCC</name>
+              <description>RTCC Interrupt</description>
+              <bitOffset>31</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>ICPR1</name>
+          <displayName>ICPR1</displayName>
+          <description>Interrupt Clear Pending Register 1</description>
+          <addressOffset>0x4</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>SYNTH</name>
+              <description>SYNTH Interrupt</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>CRYOTIMER</name>
+              <description>CRYOTIMER Interrupt</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>RFSENSE</name>
+              <description>RFSENSE Interrupt</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>FPUEH</name>
+              <description>FPUEH Interrupt</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>SMU</name>
+              <description>SMU Interrupt</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>WTIMER0</name>
+              <description>WTIMER0 Interrupt</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>USART2_RX</name>
+              <description>USART2_RX Interrupt</description>
+              <bitOffset>6</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>USART2_TX</name>
+              <description>USART2_TX Interrupt</description>
+              <bitOffset>7</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>I2C1</name>
+              <description>I2C1 Interrupt</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>VDAC0</name>
+              <description>VDAC0 Interrupt</description>
+              <bitOffset>9</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>CSEN</name>
+              <description>CSEN Interrupt</description>
+              <bitOffset>10</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>LESENSE</name>
+              <description>LESENSE Interrupt</description>
+              <bitOffset>11</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>CRYPTO1</name>
+              <description>CRYPTO1 Interrupt</description>
+              <bitOffset>12</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>TRNG</name>
+              <description>TRNG Interrupt</description>
+              <bitOffset>13</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+      </registers>
+    </peripheral>
+    <peripheral>
+      <name>NVIC_IABR</name>
+      <description>Nested vectored interrupt
+      controller</description>
+      <groupName>NVIC</groupName>
+      <baseAddress>0xE000E300</baseAddress>
+      <addressBlock>
+        <offset>0x0</offset>
+        <size>0x8</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <registers>
+        <register>
+          <name>IABR0</name>
+          <displayName>IABR0</displayName>
+          <description>Interrupt Active bit Register 0</description>
+          <addressOffset>0x0</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>EMU</name>
+              <description>EMU Interrupt</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>FRC_PRI</name>
+              <description>FRC_PRI Interrupt</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>WDOG0</name>
+              <description>WDOG0 Interrupt</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>WDOG1</name>
+              <description>WDOG1 Interrupt</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>FRC</name>
+              <description>FRC Interrupt</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MODEM</name>
+              <description>MODEM Interrupt</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>RAC_SEQ</name>
+              <description>RAC_SEQ Interrupt</description>
+              <bitOffset>6</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>RAC_RSM</name>
+              <description>RAC_RSM Interrupt</description>
+              <bitOffset>7</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>BUFC</name>
+              <description>BUFC Interrupt</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>LDMA</name>
+              <description>LDMA Interrupt</description>
+              <bitOffset>9</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>GPIO_EVEN</name>
+              <description>GPIO_EVEN Interrupt</description>
+              <bitOffset>10</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>TIMER0</name>
+              <description>TIMER0 Interrupt</description>
+              <bitOffset>11</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>USART0_RX</name>
+              <description>USART0_RX Interrupt</description>
+              <bitOffset>12</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>USART0_TX</name>
+              <description>USART0_TX Interrupt</description>
+              <bitOffset>13</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ACMP0</name>
+              <description>ACMP0 Interrupt</description>
+              <bitOffset>14</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ADC0</name>
+              <description>ADC0 Interrupt</description>
+              <bitOffset>15</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>IDAC0</name>
+              <description>IDAC0 Interrupt</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>I2C0</name>
+              <description>I2C0 Interrupt</description>
+              <bitOffset>17</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>GPIO_ODD</name>
+              <description>GPIO_ODD Interrupt</description>
+              <bitOffset>18</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>TIMER1</name>
+              <description>TIMER1 Interrupt</description>
+              <bitOffset>19</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>USART1_RX</name>
+              <description>USART1_RX Interrupt</description>
+              <bitOffset>20</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>USART1_TX</name>
+              <description>USART1_TX Interrupt</description>
+              <bitOffset>21</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>LEUART0</name>
+              <description>LEUART0 Interrupt</description>
+              <bitOffset>22</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PCNT0</name>
+              <description>PCNT0 Interrupt</description>
+              <bitOffset>23</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>CMU</name>
+              <description>CMU Interrupt</description>
+              <bitOffset>24</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MSC</name>
+              <description>MSC Interrupt</description>
+              <bitOffset>25</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>CRYPTO0</name>
+              <description>CRYPTO0 Interrupt</description>
+              <bitOffset>26</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>LETIMER0</name>
+              <description>LETIMER0 Interrupt</description>
+              <bitOffset>27</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>AGC</name>
+              <description>AGC Interrupt</description>
+              <bitOffset>28</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PROTIMER</name>
+              <description>PROTIMER Interrupt</description>
+              <bitOffset>29</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PRORTC</name>
+              <description>PRORTC Interrupt</description>
+              <bitOffset>30</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>RTCC</name>
+              <description>RTCC Interrupt</description>
+              <bitOffset>31</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>IABR1</name>
+          <displayName>IABR1</displayName>
+          <description>Interrupt Active bit Register 1</description>
+          <addressOffset>0x4</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>SYNTH</name>
+              <description>SYNTH Interrupt</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>CRYOTIMER</name>
+              <description>CRYOTIMER Interrupt</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>RFSENSE</name>
+              <description>RFSENSE Interrupt</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>FPUEH</name>
+              <description>FPUEH Interrupt</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>SMU</name>
+              <description>SMU Interrupt</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>WTIMER0</name>
+              <description>WTIMER0 Interrupt</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>USART2_RX</name>
+              <description>USART2_RX Interrupt</description>
+              <bitOffset>6</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>USART2_TX</name>
+              <description>USART2_TX Interrupt</description>
+              <bitOffset>7</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>I2C1</name>
+              <description>I2C1 Interrupt</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>VDAC0</name>
+              <description>VDAC0 Interrupt</description>
+              <bitOffset>9</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>CSEN</name>
+              <description>CSEN Interrupt</description>
+              <bitOffset>10</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>LESENSE</name>
+              <description>LESENSE Interrupt</description>
+              <bitOffset>11</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>CRYPTO1</name>
+              <description>CRYPTO1 Interrupt</description>
+              <bitOffset>12</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>TRNG</name>
+              <description>TRNG Interrupt</description>
+              <bitOffset>13</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+      </registers>
+    </peripheral>
+    <peripheral>
+      <name>NVIC_IP</name>
+      <description>Nested vectored interrupt
+      controller</description>
+      <groupName>NVIC</groupName>
+      <baseAddress>0xE000E400</baseAddress>
+      <addressBlock>
+        <offset>0x0</offset>
+        <size>0x30</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <registers>
+        <register>
+          <name>IP0</name>
+          <displayName>IP</displayName>
+          <description>Interrupt Priority Register 0</description>
+          <addressOffset>0x0</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>EMU</name>
+              <description>EMU Interrupt</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>FRC_PRI</name>
+              <description>FRC_PRI Interrupt</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>WDOG0</name>
+              <description>WDOG0 Interrupt</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>WDOG1</name>
+              <description>WDOG1 Interrupt</description>
+              <bitOffset>24</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>IP1</name>
+          <displayName>IP1</displayName>
+          <description>Interrupt Priority Register 1</description>
+          <addressOffset>0x4</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>FRC</name>
+              <description>FRC Interrupt</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>MODEM</name>
+              <description>MODEM Interrupt</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>RAC_SEQ</name>
+              <description>RAC_SEQ Interrupt</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>RAC_RSM</name>
+              <description>RAC_RSM Interrupt</description>
+              <bitOffset>24</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>IP2</name>
+          <displayName>IP2</displayName>
+          <description>Interrupt Priority Register 2</description>
+          <addressOffset>0x8</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>BUFC</name>
+              <description>BUFC Interrupt</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>LDMA</name>
+              <description>LDMA Interrupt</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>GPIO_EVEN</name>
+              <description>GPIO_EVEN Interrupt</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>TIMER0</name>
+              <description>TIMER0 Interrupt</description>
+              <bitOffset>24</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>IP3</name>
+          <displayName>IP3</displayName>
+          <description>Interrupt Priority Register 3</description>
+          <addressOffset>0xC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>USART0_RX</name>
+              <description>USART0_RX Interrupt</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>USART0_TX</name>
+              <description>USART0_TX Interrupt</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>ACMP0</name>
+              <description>ACMP0 Interrupt</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>ADC0</name>
+              <description>ADC0 Interrupt</description>
+              <bitOffset>24</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>IP4</name>
+          <displayName>IP4</displayName>
+          <description>Interrupt Priority Register 4</description>
+          <addressOffset>0x10</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>IDAC0</name>
+              <description>IDAC0 Interrupt</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>I2C0</name>
+              <description>I2C0 Interrupt</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>GPIO_ODD</name>
+              <description>GPIO_ODD Interrupt</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>TIMER1</name>
+              <description>TIMER1 Interrupt</description>
+              <bitOffset>24</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>IP5</name>
+          <displayName>IP5</displayName>
+          <description>Interrupt Priority Register 5</description>
+          <addressOffset>0x14</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>USART1_RX</name>
+              <description>USART1_RX Interrupt</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>USART1_TX</name>
+              <description>USART1_TX Interrupt</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>LEUART0</name>
+              <description>LEUART0 Interrupt</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>PCNT0</name>
+              <description>PCNT0 Interrupt</description>
+              <bitOffset>24</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>IP6</name>
+          <displayName>IP6</displayName>
+          <description>Interrupt Priority Register 6</description>
+          <addressOffset>0x18</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>CMU</name>
+              <description>CMU Interrupt</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>MSC</name>
+              <description>MSC Interrupt</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>CRYPTO0</name>
+              <description>CRYPTO0 Interrupt</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>LETIMER0</name>
+              <description>LETIMER0 Interrupt</description>
+              <bitOffset>24</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>IP7</name>
+          <displayName>IP7</displayName>
+          <description>Interrupt Priority Register 7</description>
+          <addressOffset>0x1C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>AGC</name>
+              <description>AGC Interrupt</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>PROTIMER</name>
+              <description>PROTIMER Interrupt</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>PRORTC</name>
+              <description>PRORTC Interrupt</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>RTCC</name>
+              <description>RTCC Interrupt</description>
+              <bitOffset>24</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>IP8</name>
+          <displayName>IP8</displayName>
+          <description>Interrupt Priority Register 8</description>
+          <addressOffset>0x20</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>SYNTH</name>
+              <description>SYNTH Interrupt</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>CRYOTIMER</name>
+              <description>CRYOTIMER Interrupt</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>RFSENSE</name>
+              <description>RFSENSE Interrupt</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>FPUEH</name>
+              <description>FPUEH Interrupt</description>
+              <bitOffset>24</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>IP9</name>
+          <displayName>IP9</displayName>
+          <description>Interrupt Priority Register 9</description>
+          <addressOffset>0x24</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>SMU</name>
+              <description>SMU Interrupt</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>WTIMER0</name>
+              <description>WTIMER0 Interrupt</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>USART2_RX</name>
+              <description>USART2_RX Interrupt</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>USART2_TX</name>
+              <description>USART2_TX Interrupt</description>
+              <bitOffset>24</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>IP10</name>
+          <displayName>IP10</displayName>
+          <description>Interrupt Priority Register 10</description>
+          <addressOffset>0x28</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>I2C1</name>
+              <description>I2C1 Interrupt</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>VDAC0</name>
+              <description>VDAC0 Interrupt</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>CSEN</name>
+              <description>CSEN Interrupt</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>LESENSE</name>
+              <description>LESENSE Interrupt</description>
+              <bitOffset>24</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>            
+          </fields>
+        </register>
+        <register>
+          <name>IP11</name>
+          <displayName>IP11</displayName>
+          <description>Interrupt Priority Register 11</description>
+          <addressOffset>0x2C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>CRYPTO1</name>
+              <description>CRYPTO1 Interrupt</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>TRNG0</name>
+              <description>TRNG0 Interrupt</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+          </fields>
+        </register>
+      </registers>
+    </peripheral>
     <peripheral>
       <name>NVIC_STIR</name>
       <description>Nested vectored interrupt
