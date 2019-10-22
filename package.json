@@ -3,7 +3,7 @@
 	"name": "cortex-debug-dp-efr32bg13p",
 	"displayName": "Cortex-Debug: Device Support Pack - EFR32BG13P",
 	"description": "This package contains additional support functionality (SVD definitions) for Cortex-Debug for EFR32BG13P devices",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"engines": {
 		"vscode": "^1.34.0"
 	},
