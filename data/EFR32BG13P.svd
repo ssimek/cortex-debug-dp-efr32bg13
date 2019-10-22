@@ -93098,6 +93098,219 @@
       </registers>
     </peripheral>
     <peripheral>
+      <name>PRORTC</name>
+      <description>PRORTC</description>
+      <baseAddress>0x40044000</baseAddress>
+      <addressBlock>
+        <offset>0</offset>
+        <size>0x40</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <interrupt>
+        <name>PRORTC</name>
+        <value>30</value>
+      </interrupt>
+      <registers>
+        <register>
+          <name>CTRL</name>
+          <description>Control Register</description>
+          <addressOffset>0x0</addressOffset>
+          <size>32</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>UNKNOWN</name>
+              <description>PRORTC CTRL</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>CNT</name>
+          <description>Counter Value Register</description>
+          <addressOffset>0x4</addressOffset>
+          <size>32</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CNT</name>
+              <description>Counter Value</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>IF</name>
+          <description>PRORTC Interrupt Flags</description>
+          <addressOffset>0x8</addressOffset>
+          <size>32</size>
+          <access>read-only</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0x00000003</resetMask>
+          <fields>
+            <field>
+              <name>OF</name>
+              <description>Overflow Interrupt Flag</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-only</access>
+            </field>
+            <field>
+              <name>CMP0</name>
+              <description>Compare 0 Interrupt Flag</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-only</access>
+            </field>
+            <field>
+              <name>CMP1</name>
+              <description>Compare 1 Interrupt Flag</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>IFS</name>
+          <description>Interrupt Flag Set Register</description>
+          <addressOffset>0xC</addressOffset>
+          <size>32</size>
+          <access>write-only</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0x00000003</resetMask>
+          <fields>
+            <field>
+              <name>OF</name>
+              <description>Set Overflow Interrupt Flag</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-only</access>
+            </field>
+            <field>
+              <name>CMP0</name>
+              <description>Set Compare 0 Interrupt Flag</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>CMP1</name>
+              <description>Set Compare 1 Interrupt Flag</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>IFC</name>
+          <description>Interrupt Flag Clear Register</description>
+          <addressOffset>0x010</addressOffset>
+          <size>32</size>
+          <access>write-only</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0x00000003</resetMask>
+          <fields>
+            <field>
+              <name>OF</name>
+              <description>Clear Overflow Interrupt Flag</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>CMP0</name>
+              <description>Clear Compare 0 Interrupt Flag</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>CMP1</name>
+              <description>Clear Compare 1 Interrupt Flag</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>IEN</name>
+          <description>Interrupt Enable Register</description>
+          <addressOffset>0x014</addressOffset>
+          <size>32</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0x00000003</resetMask>
+          <fields>
+            <field>
+              <name>OF</name>
+              <description>OF Interrupt Enabled</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>CMP0</name>
+              <description>CMP0 Interrupt Enabled</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>CMP1</name>
+              <description>CMP1 Interrupt Enabled</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>CMP0</name>
+          <description>Compare Value 0 Register</description>
+          <addressOffset>0x20</addressOffset>
+          <size>32</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>VALUE</name>
+              <description>Compare Value</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>CMP1</name>
+          <description>Compare Value 1 Register</description>
+          <addressOffset>0x24</addressOffset>
+          <size>32</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>VALUE</name>
+              <description>Compare Value</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+            </field>
+          </fields>
+        </register>
+      </registers>
+    </peripheral>
+    <peripheral>
       <name>WDOG0</name>
       <version>5.8.2</version>
       <description>WDOG0</description>
